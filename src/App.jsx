@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 // import de los componetes principales (constantes)
 //import Menu from "./Components/Menu/Menu.jsx";
-//import Navbar from "./Components/Navbar/Navbar.jsx";
+import BarraNavegacion from "./Components/Navbar/Navbar.jsx";
 
 // import de las pag a utilizar
 import InfoProveedores from "./Pages/InfoProveedores/InfoProveedores.jsx";
@@ -17,10 +17,17 @@ function App() {
   // layout para la aplicacion
   const Layout = () => {
     return (
-      <div>
+      <div className="flex flex-col ">
         <div>
-          <Outlet />
+          <BarraNavegacion />
         </div>
+        <div className="flex flex-row">
+          <div className=" basis-1/6">sidebar</div>
+          <div className=" basis-5/6">
+            Main <Outlet />
+          </div>
+        </div>
+        <div>footer</div>
       </div>
     );
   };
