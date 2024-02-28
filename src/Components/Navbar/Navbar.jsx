@@ -1,6 +1,6 @@
 const BarraNavegacion = () => {
   return (
-    <nav className="relative flex w-full flex-wrap items-center  bg-gray-50 py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700  lg:py-4">
+    <nav className="relative flex w-full flex-wrap items-center  bg-gray-50 py-2 text-neutral-500  hover:text-neutral-700 focus:text-neutral-700  lg:py-4">
       <div className="flex w-full flex-wrap items-center gap-3 px-3">
         <div>
           <a
