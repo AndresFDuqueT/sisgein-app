@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Menu = () => {
   return (
-    <div className=" bg-gray-50 p-4  flex flex-col gap-96">
+    <div className=" bg-gray-50 p-4  flex flex-col gap-96 h-full">
       <div className="gap-5 " id="Superior">
         <Link to="/inventario" className="flex flex-row items-center gap-1">
           <img

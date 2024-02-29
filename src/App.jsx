@@ -23,11 +23,11 @@ function App() {
           <BarraNavegacion />
         </div>
         <div className="flex flex-row">
-          <div className=" flex-initial w-56">
+          <div className=" flex-initial w-56 h-full">
             <Menu />
           </div>
-          <div className=" basis-5/6">
-            Main <Outlet />
+          <div className=" basis-full bg-slate-50">
+            <Outlet />
           </div>
         </div>
         <div>
