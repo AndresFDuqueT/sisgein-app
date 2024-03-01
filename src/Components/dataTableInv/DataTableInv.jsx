@@ -47,11 +47,11 @@ const DataTableInv = ({ data }) => {
           ))}
         </tbody>
       </table>
-      <nav aria-label="Page navigation example">
-        <ul class="list-style-none flex">
+      <nav className="items-center m-4">
+        <ul className="list-style-none flex">
           <li>
             <a
-              class="relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
+              className="relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
               href="#"
             >
               Previous
