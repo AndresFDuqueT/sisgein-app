@@ -1,3 +1,6 @@
+import DataTableInv from "../../Components/dataTableInv/DataTableInv";
+import data from "../../data.js";
+
 const Inventario = () => {
   return (
     <div className=" grid-cols-1 grid-rows-6">
@@ -59,7 +62,9 @@ const Inventario = () => {
           </div>
         </div>
       </div>
-      <div className="col-span-1 row-span-2 bg-white rounded-md border-gray-200 m-5 p-5 h-full"></div>
+      <div className="col-span-1 row-span-2 bg-white rounded-md border-gray-200 m-5 p-5 h-full">
+        <DataTableInv data={data} />
+      </div>
     </div>
   );
 };
