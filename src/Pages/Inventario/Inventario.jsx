@@ -63,6 +63,15 @@ const Inventario = () => {
         </div>
       </div>
       <div className="col-span-1 row-span-2 bg-white rounded-md border-gray-200 m-5 p-5 h-full">
+        <div className="flex flex-row m-5 justify-between">
+          <h3 className="text-5xl font-medium">Inventario</h3>
+          <button
+            type="button"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >
+            Agregar Item
+          </button>
+        </div>
         <DataTableInv data={data} />
       </div>
     </div>

@@ -23,18 +23,18 @@ const DataTableInv = ({ data }) => {
               className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 dark:border-gray-500 dark:hover:bg-gray-200 "
               key={item.id}
             >
-              <td className="whitespace-nowrap px-6 py-4 font-medium">
+              <td className="whitespace-nowrap px-4 py-3 font-medium">
                 {item.id}
               </td>
-              <td className="whitespace-nowrap px-6 py-4">{item.nombre}</td>
-              <td className="whitespace-nowrap px-6 py-4">{item.autor}</td>
-              <td className="whitespace-nowrap px-6 py-4">{item.editorial}</td>
-              <td className="whitespace-nowrap px-6 py-4">{item.proveedor}</td>
-              <td className="whitespace-nowrap px-6 py-4">{item.enBodega}</td>
-              <td className="whitespace-nowrap px-6 py-4">
+              <td className="whitespace-nowrap px-4 py-3">{item.nombre}</td>
+              <td className="whitespace-nowrap px-4 py-3">{item.autor}</td>
+              <td className="whitespace-nowrap px-4 py-3">{item.editorial}</td>
+              <td className="whitespace-nowrap px-4 py-3">{item.proveedor}</td>
+              <td className="whitespace-nowrap px-4 py-3">{item.enBodega}</td>
+              <td className="whitespace-nowrap px-4 py-3">
                 {item.totalInventario}
               </td>
-              <td className="whitespace-nowrap px-6 py-4">
+              <td className="whitespace-nowrap px-4 py-3">
                 <Link to="/producto">
                   <img
                     src="./src/assets/icons/config.svg"
@@ -47,11 +47,11 @@ const DataTableInv = ({ data }) => {
           ))}
         </tbody>
       </table>
-      <nav className="items-center m-4">
-        <ul className="list-style-none flex">
+      <nav className=" m-4">
+        <ul className="list-style-none flex items-center">
           <li>
             <a
-              className="relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
+              className="relative block rounded mx-2 bg-gray-200 px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-gray-800 dark:hover:bg-neutral-700 dark:hover:text-white"
               href="#"
             >
               Previous
@@ -59,7 +59,7 @@ const DataTableInv = ({ data }) => {
           </li>
           <li>
             <a
-              className="relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
+              className="relative block rounded mx-2 bg-gray-200 px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-gray-800 dark:hover:bg-neutral-700 dark:hover:text-white"
               href="#"
             >
               1
@@ -67,7 +67,7 @@ const DataTableInv = ({ data }) => {
           </li>
           <li aria-current="page">
             <a
-              className="relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
+              className="relative block rounded mx-2 bg-gray-200 px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-gray-800 dark:hover:bg-neutral-700 dark:hover:text-white"
               href="#"
             >
               2
@@ -75,7 +75,7 @@ const DataTableInv = ({ data }) => {
           </li>
           <li>
             <a
-              className="relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
+              className="relative block rounded mx-2 bg-gray-200 px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-gray-800 dark:hover:bg-neutral-700 dark:hover:text-white"
               href="#"
             >
               3
@@ -83,7 +83,7 @@ const DataTableInv = ({ data }) => {
           </li>
           <li>
             <a
-              className="relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
+              className="relative block rounded mx-2 bg-gray-200 px-3 py-1.5 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-gray-800 dark:hover:bg-neutral-700 dark:hover:text-white"
               href="#"
             >
               Next
