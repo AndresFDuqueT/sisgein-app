@@ -44,16 +44,16 @@ function App() {
       element: <Layout />,
       children: [
         {
-          path: "/infoProveedores",
-          element: <InfoProveedores />,
-        },
-        {
           path: "/inventario",
           element: <Inventario />,
         },
         {
           path: "/producto",
           element: <Producto />,
+        },
+        {
+          path: "/infoProveedores",
+          element: <InfoProveedores />,
         },
         {
           path: "/proveedores",

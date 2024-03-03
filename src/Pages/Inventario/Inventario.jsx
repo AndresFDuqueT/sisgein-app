@@ -1,7 +1,10 @@
+import { useState } from "react";
 import DataTableInv from "../../Components/dataTableInv/DataTableInv";
+import Modal from "../../Components/Modal/Modal.jsx";
 import data from "../../data.js";
 
 const Inventario = () => {
+  const [open, setOpen] = useState(false);
   return (
     <div className=" grid-cols-1 grid-rows-6">
       <div className="col-span-1 row-span-2 bg-white rounded-md border-gray-200 m-5 p-5">
@@ -68,12 +71,35 @@ const Inventario = () => {
           <button
             type="button"
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onClick={() => setOpen(true)}
           >
             Agregar Item
           </button>
         </div>
+
         <DataTableInv data={data} />
       </div>
+      <Modal open={open} onClose={() => setOpen(false)}>
+        <div className="text-center w-56">
+          <div className="mx-auto my-4 w-48">
+            <h3 className="text-lg font-black text-gray-800">Confirm Delete</h3>
+            <p className="text-sm text-gray-500">
+              Are you sure you want to delete this item?
+            </p>
+          </div>
+          <div className="flex gap-4">
+            <button
+              className="bg-gray-400 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded w-full"
+              onClick={() => setOpen(false)}
+            >
+              Cancel
+            </button>
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">
+              Crear
+            </button>
+          </div>
+        </div>
+      </Modal>
     </div>
   );
 };
